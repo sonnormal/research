@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draft</title>
+	<link rel="stylesheet" href="../css/green-layout.css">
+	<link rel="stylesheet" href="../css/green-form.css">
+	<script type="text/javascript" src="draft.js"></script>
+</head>
+<body>
+
+<div class="head_line">
+	<div class="head_button"><a href="../index.html">HOME</a></div>
+	<div class="head_arrow"></div>
+	<div class="head_step">STEP 1</div>
+	<div class="head_arrow"><svg><polygon points="0,0 24,24 0,48" style="fill:rgb(180,180,180)" /></svg></div>
+	<div class="head_step">STEP 2</div>
+	<div class="head_arrow"><svg><polygon points="0,0 24,24 0,48" style="fill:rgb(180,180,180)" /></svg></div>
+	<div class="head_step">STEP 3</div>
+	<div class="head_arrow"><svg><polygon points="0,0 24,24 0,48" style="fill:rgb(180,180,180)" /></svg></div>
+	<div class="head_step">STEP 4</div>
+	<div class="head_arrow"><svg><polygon points="0,0 24,24 0,48" style="fill:rgb(180,180,180)" /></svg></div>
+	<div class="head_step">STEP 5</div>
+	<div class="head_arrow"><svg><polygon points="0,0 24,24 0,48" style="fill:rgb(180,180,180)" /></svg></div>
+	<div class="head_step">STEP 6</div>
+	<div class="head_arrow"><svg><polygon points="0,0 24,24 0,48" style="fill:rgb(180,180,180)" /></svg></div>
+	<div class="head_button">Action</div>
+	<div class="head_arrow"></div>
+	<div class="head_button">Functional Description</div>
+	<div class="head_arrow"></div>
+	<div class="head_button">Change Request</div>
+</div>
+
+<div class="notification" id="msg_to_user">Welcome! Please find message from the system to you in this line ... !!!
+</div>
+
+<form name="myform">
+	<div class="left_column_50">
+		<div class="single_row_odd">
+			<span class="lable_50">Entity Name</span>
+			<input class="input_50" type="text" name="entity_name" onchange="validate_entity_name()">
+		</div>
+		<div class="single_row_even">
+			<span class="lable_50">English Description</span>
+		</div>
+		<textarea name="en_desc"></textarea>
+		<div class="single_row_odd">
+			<span class="lable_50">Vietnamese Description</span>
+		</div>
+		<textarea name="vi_desc"></textarea>
+	</div>
+	<div class="right_column_50">
+		<div class="single_row_odd">	
+			<span class="lable_50">Attribute name</span>
+			<input class="input_50" type="text" name="attr_name">
+		</div>
+		<div class="single_row_even">
+			<span class="lable_50">Data type</span>
+			<input class="input_50" list="data_type" name="data_type">
+			<datalist id="data_type">
+				<option value="number"/>
+				<option value="text"/>
+				<option value="text area"/>
+				<option value="email"/>
+				<option value="password"/>
+				<option value="checkbox"/>
+				<option value="date"/>
+				<option value="datetime"/>
+				<option value="time"/>
+				<option value="month"/>
+				<option value="week"/>
+				<option value="url"/>
+				<option value="color"/>
+			</datalist>
+		</div>
+		<div class="single_row_odd">
+			<span class="lable_50">English description</span>
+			<input class="input_50" type="text" name="en_desc">
+		</div>
+		<div class="single_row_even">
+			<span class="lable_50">Vietnamese description</span>
+			<input class="input_50" type="text" name="vi_desc">
+		</div>
+		<div class="single_row_odd">
+			<span class="lable_50">is Required</span>
+			<input class="input_check" type="checkbox" name="is_required">
+		</div>
+		<div class="single_row_even">
+			<span class="lable_50">is Read only</span>
+			<input class="input_check" type="checkbox" name="is_read_only">
+		</div>
+		<div class="single_row_odd">
+			<span class="lable_50">Maximum value</span>
+			<input class="input_50" type="number" name="maximum_value">
+		</div>
+		<div class="single_row_even">
+			<span class="lable_50">Minimum value</span>
+			<input class="input_50" type="number" name="minimum_value">
+		</div>
+		<div class="single_row_odd">
+			<span class="lable_50">Maximum number of character</span>
+			<input class="input_50" type="number" name="maximum_number_of_character">
+		</div>
+		<div class="single_row_even">
+			<span class="lable_50">Default value</span>
+			<input class="input_50" type="text" name="default_value">
+		</div>
+		<div class="single_row_odd">
+			<span class="lable_50">Color</span>
+			<input type="color" name="favcolor" value="#ff0000">
+		</div>		
+	</div>
+</form>
+
+<div class="foot_line">
+</div>
+
+</body>
+</html>
