@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 div.head_line {
 	float: left;
 	height: 5vh;
-	width: 98vw;
+	width: 99vw;
 	background-color: rgb(90,150,90);
 }
 div.button {
@@ -17,7 +21,7 @@ div.button {
 div.notification {
 	float: left;
 	height: 5vh;
-	width: 98vw;
+	width: 99vw;
 	
 	font-size: 3vh;
 	line-height: 5vh;
@@ -28,13 +32,13 @@ div.notification {
 div.row {
 	float: left;
 	height: 28vh;
-	width: 98vw;
+	width: 99vw;
 	background-color: rgb(90,150,90);
 }
 div.cell {
-	float: right;
-	height: 99%;
-	width: 32vw;
+	float: left;
+	height: 100%;
+	width: 33vw;
 	border-bottom-style: solid;
 	border-bottom-color: rgb(255,255,255);
 	border-left-style: solid;
@@ -48,7 +52,7 @@ div.cell {
 div.foot_line {
 	float: left;
 	height: 5vh;
-	width: 98vw;
+	width: 99vw;
 	background-color: rgb(90,150,90);
 
 	font-size: 2vh;
